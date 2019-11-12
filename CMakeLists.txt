@@ -24,7 +24,7 @@ FIND_PACKAGE(CUDA 6.5)
 MESSAGE(STATUS "cuda found ${CUDA_FOUND}")
 
 option(WITH_GPU "compile warp-ctc with cuda." ${CUDA_FOUND})
-option(WITH_OMP "compile warp-ctc with openmp." ON)
+#option(WITH_OMP "compile warp-ctc with openmp." ON)
 
 if(NOT WITH_OMP)
     add_definitions(-DCTC_DISABLE_OMP)
