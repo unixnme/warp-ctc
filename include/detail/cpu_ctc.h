@@ -30,7 +30,7 @@ public:
             num_threads_ = omp_get_max_threads();
         }
 #endif
-    };
+    }
 
     CpuCTC(const CpuCTC&) = delete;
     CpuCTC& operator=(const CpuCTC&) = delete;
