@@ -1,3 +1,5 @@
+set(WITH_OMP OFF)
+
 IF (APPLE)
     cmake_minimum_required(VERSION 3.4)
 ELSE()
